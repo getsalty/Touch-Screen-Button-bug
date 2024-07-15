@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0mt10vrgnlbf"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_t7nhy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_u3jft"]
+font_size = 60
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x5kex"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_t7nhy")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 410.0
+offset_top = 268.0
+offset_right = 701.0
+offset_bottom = 351.0
+text = "Click Here"
+label_settings = SubResource("LabelSettings_u3jft")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(551.2, 321.2)
+scale = Vector2(48.92, 28.52)
+shape = SubResource("RectangleShape2D_x5kex")
+action = "custom_touch_input_click"
